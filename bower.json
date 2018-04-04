@@ -1,0 +1,6 @@
+{
+	"name": "polymer-style-animator",
+	"dependencies": {
+		"polymer": "Polymer/polymer#*"
+	}
+}
