@@ -72,7 +72,6 @@ class StyleAnimator extends Polymer.Element {
 
         // Calculate the percentage (p) through the frames
         let p = 1;
-        console.log(c, n);
         if (typeof StyleAnimatorTween !== 'undefined' && n) {
             p = StyleAnimatorTween.Calculate(StyleAnimatorTween.Type[c.tween || 'Linear'], (s - c.frame) / (n.frame - c.frame));
         }
