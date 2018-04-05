@@ -1,6 +1,6 @@
 {
 	"name": "style-animator",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"description": "A Polymer webcomponent capable of key frame animation",
 	"repository": {
 		"type": "git",
