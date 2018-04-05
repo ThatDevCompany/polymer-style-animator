@@ -19,8 +19,6 @@ class StyleAnimator extends Polymer.Element {
         }
     }
 
-    static Tween = {};
-
     constructor() {
         super();
         this.atEnd = false;
@@ -73,7 +71,11 @@ class StyleAnimator extends Polymer.Element {
         this.atEnd = atEnd;
 
         // Calculate the percentage (p) through the frames
-        const p = !n ? 1 : TDC.Tween.Calculate(TDC.Tween.Type[c.tween || 'Linear'], (s - c.frame) / (n.frame - c.frame));
+        let p = 1;
+        console.log(c, n);
+        if (typeof StyleAnimatorTween !== 'undefined' && n) {
+            p = StyleAnimatorTween.Calculate(StyleAnimatorTween.Type[c.tween || 'Linear'], (s - c.frame) / (n.frame - c.frame));
+        }
 
         // Calculate values
         for (let prop in c) {

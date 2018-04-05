@@ -13,6 +13,7 @@
 	},
 	"devDependencies": {
 		"iron-component-page": "PolymerElements/iron-component-page#*",
+		"iron-demo-helpers": "PolymerElements/iron-demo-helpers#*",
 		"web-component-tester": "*",
 		"webcomponentsjs": "webcomponents/webcomponentsjs#*"
 	}
