@@ -1,6 +1,19 @@
 {
-	"name": "polymer-style-animator",
+	"name": "style-animator",
+	"version": "0.0.1",
+	"description": "A Polymer webcomponent capable of key frame animation",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/ThatDevCompany/polymer-style-animator.git"
+	},
+	"license": "MIT",
+	"main": "style-animator.html",
 	"dependencies": {
 		"polymer": "Polymer/polymer#*"
+	},
+	"devDependencies": {
+		"iron-component-page": "PolymerElements/iron-component-page#*",
+		"web-component-tester": "*",
+		"webcomponentsjs": "webcomponents/webcomponentsjs#*"
 	}
 }

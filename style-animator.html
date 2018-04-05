@@ -1,0 +1,36 @@
+<link rel="import" href="../../../bower_components/polymer/polymer-element.html">
+
+<dom-module id="style-animator">
+
+    <template>
+        <style>
+            :host {
+                position: relative;
+                display: block;
+                margin: auto;
+                text-align: center;
+            }
+
+            :host([align-left]) {
+                text-align: left;
+            }
+
+            ::slotted(img) {
+                width: 100%;
+                height: 100%;
+            }
+
+            #inner {
+                height: 100%;
+            }
+        </style>
+
+        <div id="inner">
+            <slot></slot>
+        </div>
+    </template>
+
+    <script src="style-animator.js"></script>
+    <script src="style-animator-tweens.js"></script>
+
+</dom-module>
